@@ -1,7 +1,7 @@
 {
-  "enabled": false,
+  "enabled": true,
   "name": "OpenClaw Gateway",
   "mode": "manual",
   "publicStatusEndpoint": "",
-  "note": "尚未接入。可先使用 data/openclaw-status.json 手动同步，后续改为只读公网状态端点。"
+  "note": "当前为本地快照模式。运行 scripts/refresh-openclaw-status.ps1 可刷新状态；后续可切换为 public-proxy 自动拉取。"
 }
