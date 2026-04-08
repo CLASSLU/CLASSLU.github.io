@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="路漫漫科技是一个个人技术公司主页，聚焦 AI 时代的工程化构建与持续探索。"
+      content="路漫漫科技是可持续运营的个人技术展示网站，聚焦 AI 时代工程化实践与 OpenClaw 接入。"
     />
     <meta name="theme-color" content="#070d1d" />
-    <title>路漫漫科技 | 面向 AI 时代的工程化构建</title>
+    <title>路漫漫科技 | 可持续运营的个人技术主页</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -49,7 +49,8 @@
           <a href="#skills">工程能力</a>
           <a href="#focus">探索方向</a>
           <a href="#projects">项目实践</a>
-          <a href="#roadmap">当前阶段</a>
+          <a href="#updates">运营更新</a>
+          <a href="#openclaw">OpenClaw</a>
           <a href="#contact">联系</a>
         </nav>
       </div>
@@ -59,29 +60,27 @@
       <section class="hero section">
         <div class="container hero-grid">
           <div class="hero-content reveal">
-            <p class="eyebrow">ENGINEERING IN AI ERA</p>
-            <h1 class="display">路漫漫科技｜面向 AI 时代的工程化构建</h1>
-            <p class="hero-subtitle">
-              我正在构建一个属于自己的长期技术品牌。方向仍在探索，但目标明确：把工程方法、自动化与 AI 协作融合为可持续的交付能力。
-            </p>
+            <p class="eyebrow">CONTINUOUS PERSONAL OPS</p>
+            <h1 class="display" id="heroTitle">路漫漫科技｜面向 AI 时代的工程化构建</h1>
+            <p class="hero-subtitle" id="heroSubtitle"></p>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="#focus">查看当前探索</a>
-              <a class="btn btn-ghost" href="#projects">查看代表项目</a>
+              <a class="btn btn-primary" href="#updates">查看最近更新</a>
+              <a class="btn btn-ghost" href="#openclaw">查看 OpenClaw 状态</a>
             </div>
           </div>
 
           <div class="hero-panel reveal">
             <article class="neon-card stat-card">
-              <p class="stat-value">10 年工程经验</p>
-              <p class="stat-label">长期深耕后端系统与工程化落地</p>
+              <p class="stat-value" id="heroStat1Title"></p>
+              <p class="stat-label" id="heroStat1Desc"></p>
             </article>
             <article class="neon-card stat-card">
-              <p class="stat-value">Java 起点，多栈协同</p>
-              <p class="stat-label">从传统后端延展到 AI 编程工作流</p>
+              <p class="stat-value" id="heroStat2Title"></p>
+              <p class="stat-label" id="heroStat2Desc"></p>
             </article>
             <article class="neon-card stat-card">
-              <p class="stat-value">local-cloud-hub</p>
-              <p class="stat-label">当前重点迭代的统一服务入口平台原型</p>
+              <p class="stat-value" id="heroStat3Title"></p>
+              <p class="stat-label" id="heroStat3Desc"></p>
             </article>
           </div>
         </div>
@@ -91,15 +90,8 @@
         <div class="container">
           <p class="eyebrow">ABOUT</p>
           <h2 class="section-title">关于我</h2>
-          <p class="section-intro">
-            我是一名有 10 年经验的软件开发者，长期深耕后端与系统工程。路漫漫科技是我面向下一阶段实践的个人公司品牌，强调持续学习、持续构建与持续进化。
-          </p>
-          <div class="chip-list">
-            <span class="chip">Spring Boot / Java</span>
-            <span class="chip">系统架构与平台化</span>
-            <span class="chip">自动化与运维工具</span>
-            <span class="chip">AI 协作开发</span>
-          </div>
+          <p class="section-intro" id="aboutDescription"></p>
+          <div class="chip-list" id="aboutTags"></div>
         </div>
       </section>
 
@@ -107,25 +99,8 @@
         <div class="container">
           <p class="eyebrow">CAPABILITIES</p>
           <h2 class="section-title">工程能力矩阵</h2>
-          <p class="section-intro">以可维护、可扩展、可运营为判断标准，不被单一技术栈限制。</p>
-          <div class="matrix-grid">
-            <article class="neon-card matrix-card reveal">
-              <h3>后端系统架构</h3>
-              <p>围绕业务域建模、接口设计、权限体系与数据链路，构建稳定可演进的服务架构。</p>
-            </article>
-            <article class="neon-card matrix-card reveal">
-              <h3>平台工程与治理</h3>
-              <p>通过配置中心、路由管理、服务编排与可观测机制提升系统自治与可操作性。</p>
-            </article>
-            <article class="neon-card matrix-card reveal">
-              <h3>自动化与效率工具</h3>
-              <p>把重复流程脚本化、工具化，缩短从想法到可运行结果的交付路径。</p>
-            </article>
-            <article class="neon-card matrix-card reveal">
-              <h3>AI 时代开发协同</h3>
-              <p>将 AI 融入需求拆解、实现、验证与迭代，让研发流程更快、更稳、更系统。</p>
-            </article>
-          </div>
+          <p class="section-intro">能力内容来自 `data/site-content.json`，可持续增删。</p>
+          <div class="matrix-grid" id="capabilityList"></div>
         </div>
       </section>
 
@@ -133,63 +108,85 @@
         <div class="container">
           <p class="eyebrow">NOW</p>
           <h2 class="section-title">当前探索方向</h2>
-          <div class="focus-list">
-            <article class="neon-card focus-item reveal">
-              <h3>本地到云的统一入口</h3>
-              <p>探索多服务开发环境、路由与公网入口的统一管理，降低部署与运维复杂度。</p>
-            </article>
-            <article class="neon-card focus-item reveal">
-              <h3>AI 编程时代工程方法</h3>
-              <p>把 AI 从“辅助写代码”扩展到“参与完整交付链路”的工程实践。</p>
-            </article>
-            <article class="neon-card focus-item reveal">
-              <h3>长期产品化沉淀</h3>
-              <p>从单点项目逐步抽象能力模块，形成可复用的技术资产与产品方向。</p>
-            </article>
-          </div>
+          <div class="focus-list" id="focusList"></div>
         </div>
       </section>
 
       <section class="section reveal" id="projects">
         <div class="container">
-          <article class="neon-card project-wrap">
-            <p class="eyebrow">PROJECT</p>
-            <h2 class="section-title">代表项目：local-cloud-hub</h2>
-            <p class="section-intro">
-              一个本地部署网关与服务管理平台原型，聚焦统一服务入口、路由管理、状态可观测与运维自动化，代表我当前在平台工程方向的核心实践。
-            </p>
-            <div class="project-meta">
-              <span>网关</span>
-              <span>服务管理</span>
-              <span>Cloudflare Tunnel</span>
-              <span>平台化</span>
-              <span>持续迭代中</span>
-            </div>
-          </article>
+          <p class="eyebrow">PROJECTS</p>
+          <h2 class="section-title">项目实践</h2>
+          <div class="project-list" id="projectList"></div>
         </div>
       </section>
 
-      <section class="section reveal" id="roadmap">
+      <section class="section reveal" id="updates">
         <div class="container">
-          <p class="eyebrow">ROADMAP</p>
-          <h2 class="section-title">当前阶段</h2>
-          <div class="roadmap-grid">
-            <article class="neon-card roadmap-item reveal">
-              <span class="step-index">01</span>
-              <h3>能力沉淀</h3>
-              <p>把零散经验固化为模板、脚本和可复用流程。</p>
+          <p class="eyebrow">OPERATIONS</p>
+          <h2 class="section-title">持续运营更新流</h2>
+          <p class="section-intro">更新内容来自 `data/updates.json`。每次有进展，只需追加一条记录并推送。</p>
+          <div class="ops-grid">
+            <article class="neon-card ops-panel">
+              <h3>最近更新</h3>
+              <ul class="timeline-list" id="updateList"></ul>
             </article>
-            <article class="neon-card roadmap-item reveal">
-              <span class="step-index">02</span>
-              <h3>原型迭代</h3>
-              <p>围绕核心项目持续打磨，从可运行走向高稳定。</p>
-            </article>
-            <article class="neon-card roadmap-item reveal">
-              <span class="step-index">03</span>
-              <h3>方向收敛</h3>
-              <p>在实践反馈中验证价值，逐步明确长期产品路径。</p>
+            <article class="neon-card ops-panel">
+              <h3>运营动作建议</h3>
+              <ul class="ops-checklist">
+                <li>每周至少更新 1 条项目进展</li>
+                <li>每月沉淀 1 条工程方法总结</li>
+                <li>关键里程碑同步到项目实践区</li>
+                <li>OpenClaw 状态通过只读接口自动更新</li>
+              </ul>
             </article>
           </div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="openclaw">
+        <div class="container">
+          <p class="eyebrow">OPENCLAW</p>
+          <h2 class="section-title">OpenClaw 接入状态</h2>
+          <p class="section-intro">
+            网站不会存储你的网关密钥。推荐通过只读公开状态端点接入（例如由 local-cloud-hub 提供）。
+          </p>
+
+          <article class="neon-card status-panel">
+            <div class="status-header">
+              <h3 id="ocName">OpenClaw Gateway</h3>
+              <span class="status-badge" id="ocBadge">未配置</span>
+            </div>
+
+            <div class="status-grid">
+              <div>
+                <p class="status-key">接入模式</p>
+                <p class="status-value" id="ocMode">manual</p>
+              </div>
+              <div>
+                <p class="status-key">健康摘要</p>
+                <p class="status-value" id="ocSummary">未配置</p>
+              </div>
+              <div>
+                <p class="status-key">模型</p>
+                <p class="status-value" id="ocModel">未提供</p>
+              </div>
+              <div>
+                <p class="status-key">通道在线</p>
+                <p class="status-value" id="ocChannels">0 / 0</p>
+              </div>
+              <div>
+                <p class="status-key">活跃会话</p>
+                <p class="status-value" id="ocSessions">0</p>
+              </div>
+              <div>
+                <p class="status-key">最近同步</p>
+                <p class="status-value" id="ocUpdatedAt">未同步</p>
+              </div>
+            </div>
+
+            <p class="status-note" id="ocNote"></p>
+            <a class="panel-link" href="./docs/openclaw-integration.md">查看 OpenClaw 接入说明</a>
+          </article>
         </div>
       </section>
 
@@ -200,7 +197,7 @@
           <p class="section-intro">如果你也关注工程化与 AI 编程实践，欢迎邮件交流。</p>
           <article class="neon-card contact-card reveal">
             <h3>邮箱</h3>
-            <a href="mailto:me@luyuanlab.eu.org">me@luyuanlab.eu.org</a>
+            <a id="contactEmail" href="mailto:me@luyuanlab.eu.org">me@luyuanlab.eu.org</a>
           </article>
         </div>
       </section>
@@ -209,7 +206,7 @@
     <footer class="site-footer">
       <div class="container footer-inner">
         <p>© <span id="year"></span> 路漫漫科技</p>
-        <p>Build Fast. Ship Strong. Keep Evolving.</p>
+        <p id="buildLabel">Build Fast. Ship Strong. Keep Evolving.</p>
       </div>
     </footer>
 

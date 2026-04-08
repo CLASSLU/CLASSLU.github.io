@@ -1,0 +1,81 @@
+{
+  "hero": {
+    "title": "路漫漫科技｜面向 AI 时代的工程化构建",
+    "subtitle": "我正在构建一个可持续运营的个人技术品牌。方向在探索，但方法明确：工程化 + 自动化 + AI 协作，持续产出可验证结果。",
+    "stats": [
+      {
+        "title": "10 年工程经验",
+        "description": "长期深耕后端系统与工程化交付"
+      },
+      {
+        "title": "Java 起点，多栈协同",
+        "description": "从传统后端延展到 AI 编程工作流"
+      },
+      {
+        "title": "local-cloud-hub",
+        "description": "当前重点迭代的统一服务入口平台原型"
+      }
+    ]
+  },
+  "about": {
+    "description": "我是一名有 10 年经验的软件开发者，长期深耕后端与系统工程。路漫漫科技是我面向下一阶段实践的个人公司品牌，强调持续学习、持续构建与持续进化。",
+    "tags": [
+      "Spring Boot / Java",
+      "系统架构与平台化",
+      "自动化与运维工具",
+      "AI 协作开发"
+    ]
+  },
+  "capabilities": [
+    {
+      "title": "后端系统架构",
+      "description": "围绕业务域建模、接口设计、权限体系与数据链路，构建稳定可演进的服务架构。"
+    },
+    {
+      "title": "平台工程与治理",
+      "description": "通过配置中心、路由管理、服务编排与可观测机制提升系统自治与可操作性。"
+    },
+    {
+      "title": "自动化与效率工具",
+      "description": "把重复流程脚本化、工具化，缩短从想法到可运行结果的交付路径。"
+    },
+    {
+      "title": "AI 时代开发协同",
+      "description": "将 AI 融入需求拆解、实现、验证与迭代，让研发流程更快、更稳、更系统。"
+    }
+  ],
+  "focus": [
+    {
+      "title": "本地到云的统一入口",
+      "description": "探索多服务开发环境、路由与公网入口的统一管理，降低部署与运维复杂度。"
+    },
+    {
+      "title": "AI 编程时代工程方法",
+      "description": "把 AI 从辅助写代码扩展到参与完整交付链路的工程实践。"
+    },
+    {
+      "title": "长期产品化沉淀",
+      "description": "从单点项目逐步抽象能力模块，形成可复用的技术资产与产品方向。"
+    }
+  ],
+  "projects": [
+    {
+      "name": "local-cloud-hub",
+      "description": "本地部署网关与服务管理平台原型，聚焦统一服务入口、路由管理、状态可观测与运维自动化。",
+      "keywords": [
+        "网关",
+        "服务管理",
+        "Cloudflare Tunnel",
+        "平台化"
+      ],
+      "status": "持续迭代中",
+      "link": ""
+    }
+  ],
+  "contact": {
+    "email": "me@luyuanlab.eu.org"
+  },
+  "meta": {
+    "buildLabel": "Continuous Personal Ops v1"
+  }
+}

@@ -1,31 +1,46 @@
-# 路漫漫科技主页（单页）
+# 路漫漫科技主页（持续运营版）
 
-这是一个静态单页个人公司主页，定位为：
+这是一个可持续运营的个人技术展示网站，重点特性：
 
-- 个人技术公司展示
-- 工程能力矩阵呈现
-- 当前探索方向与代表项目说明
-- 仅中文内容
+- 数据驱动内容：通过 `data/*.json` 维护文案与模块
+- 运营更新流：用 `data/updates.json` 记录持续进展
+- OpenClaw 接入面板：支持手动状态或只读公网状态端点
+- 深色霓虹科技风 UI，移动端适配
 
-## 文件说明
+## 目录结构
 
-- `index.html`：页面结构与文案
-- `styles.css`：视觉样式、响应式与动效
-- `script.js`：移动导航、滚动状态与入场动效
+- `index.html`：页面结构（模块容器）
+- `styles.css`：视觉样式与响应式
+- `script.js`：数据加载、渲染、交互
+- `data/site-content.json`：主页核心内容
+- `data/updates.json`：更新日志
+- `data/openclaw-config.json`：OpenClaw 接入配置
+- `data/openclaw-status.json`：OpenClaw 状态数据（可手动/自动更新）
+- `scripts/refresh-openclaw-status.ps1`：本地抓取 OpenClaw 状态脚本
+- `docs/openclaw-integration.md`：OpenClaw 接入说明
 
 ## 本地预览
-
-方式 1：直接打开 `index.html`。  
-方式 2：使用静态服务：
 
 ```bash
 npx --yes serve . -l 4173
 ```
 
-然后访问 `http://localhost:4173`。
+打开 `http://localhost:4173`。
 
-## 内容维护
+## 持续运营流程（推荐）
 
-- 更新文案：编辑 `index.html`
-- 更新视觉主题：编辑 `styles.css` 中 `:root` 变量
-- 更新联系邮箱：编辑 `index.html` 中 `mailto` 链接
+1. 更新内容：编辑 `data/site-content.json`
+2. 追加进展：编辑 `data/updates.json`
+3. 同步 OpenClaw 状态（可选）：
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\refresh-openclaw-status.ps1
+```
+
+4. 提交并推送：
+
+```bash
+git add .
+git commit -m "chore: update site content"
+git push
+```

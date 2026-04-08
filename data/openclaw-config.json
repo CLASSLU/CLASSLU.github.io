@@ -1,0 +1,7 @@
+{
+  "enabled": false,
+  "name": "OpenClaw Gateway",
+  "mode": "manual",
+  "publicStatusEndpoint": "",
+  "note": "尚未接入。可先使用 data/openclaw-status.json 手动同步，后续改为只读公网状态端点。"
+}
