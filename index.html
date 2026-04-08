@@ -7,24 +7,28 @@
       name="description"
       content="路漫漫科技是一个个人技术公司主页，聚焦 AI 时代的工程化构建与持续探索。"
     />
+    <meta name="theme-color" content="#070d1d" />
     <title>路漫漫科技 | 面向 AI 时代的工程化构建</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Sans+SC:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Sans+SC:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="aurora aurora-a" aria-hidden="true"></div>
+    <div class="aurora aurora-b" aria-hidden="true"></div>
+    <div class="grid-overlay" aria-hidden="true"></div>
+
     <header class="site-header" id="top">
       <div class="container header-inner">
         <a class="brand" href="#top">
           <span class="brand-mark">LM</span>
           <span class="brand-copy">
             <strong>路漫漫科技</strong>
-            <small>Personal Engineering Studio</small>
+            <small>PERSONAL ENGINEERING STUDIO</small>
           </span>
         </a>
 
@@ -55,25 +59,29 @@
       <section class="hero section">
         <div class="container hero-grid">
           <div class="hero-content reveal">
-            <p class="eyebrow">ENGINEERING STUDIO</p>
+            <p class="eyebrow">ENGINEERING IN AI ERA</p>
             <h1 class="display">路漫漫科技｜面向 AI 时代的工程化构建</h1>
             <p class="hero-subtitle">
-              这是我的个人公司主页。方向仍在探索，但方法已经明确：用工程化能力把想法快速落地、持续迭代、长期积累。
+              我正在构建一个属于自己的长期技术品牌。方向仍在探索，但目标明确：把工程方法、自动化与 AI 协作融合为可持续的交付能力。
             </p>
-            <a class="btn btn-primary" href="#focus">查看当前探索</a>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#focus">查看当前探索</a>
+              <a class="btn btn-ghost" href="#projects">查看代表项目</a>
+            </div>
           </div>
+
           <div class="hero-panel reveal">
-            <article class="stat-card">
-              <p class="stat-value">10 年</p>
-              <p class="stat-label">软件开发经验（以后端为核心）</p>
+            <article class="neon-card stat-card">
+              <p class="stat-value">10 年工程经验</p>
+              <p class="stat-label">长期深耕后端系统与工程化落地</p>
             </article>
-            <article class="stat-card">
-              <p class="stat-value">Java 起点，多栈实践</p>
-              <p class="stat-label">从传统后端到 AI 编程协作</p>
+            <article class="neon-card stat-card">
+              <p class="stat-value">Java 起点，多栈协同</p>
+              <p class="stat-label">从传统后端延展到 AI 编程工作流</p>
             </article>
-            <article class="stat-card">
+            <article class="neon-card stat-card">
               <p class="stat-value">local-cloud-hub</p>
-              <p class="stat-label">当前重点打磨的工程化项目</p>
+              <p class="stat-label">当前重点迭代的统一服务入口平台原型</p>
             </article>
           </div>
         </div>
@@ -84,7 +92,7 @@
           <p class="eyebrow">ABOUT</p>
           <h2 class="section-title">关于我</h2>
           <p class="section-intro">
-            我是一名有 10 年经验的软件开发者，长期深耕后端与系统工程。路漫漫科技是我面向下一阶段技术实践的个人公司品牌，核心目标不是“先定义业务”，而是先建立可持续的工程能力底座。
+            我是一名有 10 年经验的软件开发者，长期深耕后端与系统工程。路漫漫科技是我面向下一阶段实践的个人公司品牌，强调持续学习、持续构建与持续进化。
           </p>
           <div class="chip-list">
             <span class="chip">Spring Boot / Java</span>
@@ -99,23 +107,23 @@
         <div class="container">
           <p class="eyebrow">CAPABILITIES</p>
           <h2 class="section-title">工程能力矩阵</h2>
-          <p class="section-intro">不局限于单一语言栈，以可维护、可扩展、可运营为核心标准。</p>
+          <p class="section-intro">以可维护、可扩展、可运营为判断标准，不被单一技术栈限制。</p>
           <div class="matrix-grid">
-            <article class="matrix-card reveal">
+            <article class="neon-card matrix-card reveal">
               <h3>后端系统架构</h3>
-              <p>围绕业务域建模、接口设计、权限与数据链路，构建稳定可演进的服务架构。</p>
+              <p>围绕业务域建模、接口设计、权限体系与数据链路，构建稳定可演进的服务架构。</p>
             </article>
-            <article class="matrix-card reveal">
+            <article class="neon-card matrix-card reveal">
               <h3>平台工程与治理</h3>
-              <p>通过配置中心、路由管理、服务编排与监控机制提升系统自治与可操作性。</p>
+              <p>通过配置中心、路由管理、服务编排与可观测机制提升系统自治与可操作性。</p>
             </article>
-            <article class="matrix-card reveal">
+            <article class="neon-card matrix-card reveal">
               <h3>自动化与效率工具</h3>
-              <p>将重复工作脚本化、工具化，缩短从想法到可运行结果的路径。</p>
+              <p>把重复流程脚本化、工具化，缩短从想法到可运行结果的交付路径。</p>
             </article>
-            <article class="matrix-card reveal">
+            <article class="neon-card matrix-card reveal">
               <h3>AI 时代开发协同</h3>
-              <p>把 AI 编程能力融入研发流程，从“写代码”升级为“设计并驱动交付系统”。</p>
+              <p>将 AI 融入需求拆解、实现、验证与迭代，让研发流程更快、更稳、更系统。</p>
             </article>
           </div>
         </div>
@@ -126,33 +134,38 @@
           <p class="eyebrow">NOW</p>
           <h2 class="section-title">当前探索方向</h2>
           <div class="focus-list">
-            <article class="focus-item reveal">
+            <article class="neon-card focus-item reveal">
               <h3>本地到云的统一入口</h3>
-              <p>探索如何把多服务开发环境、路由和公网入口统一管理，降低部署与运维复杂度。</p>
+              <p>探索多服务开发环境、路由与公网入口的统一管理，降低部署与运维复杂度。</p>
             </article>
-            <article class="focus-item reveal">
-              <h3>AI 编程时代的工程方法</h3>
-              <p>把 AI 从“辅助写代码”扩展到“参与需求分解、实现、验证和交付”的全流程。</p>
+            <article class="neon-card focus-item reveal">
+              <h3>AI 编程时代工程方法</h3>
+              <p>把 AI 从“辅助写代码”扩展到“参与完整交付链路”的工程实践。</p>
             </article>
-            <article class="focus-item reveal">
-              <h3>个人公司长期产品化</h3>
-              <p>从单点项目逐步沉淀为可复用能力，形成持续输出的产品与技术资产。</p>
+            <article class="neon-card focus-item reveal">
+              <h3>长期产品化沉淀</h3>
+              <p>从单点项目逐步抽象能力模块，形成可复用的技术资产与产品方向。</p>
             </article>
           </div>
         </div>
       </section>
 
       <section class="section reveal" id="projects">
-        <div class="container project-wrap">
-          <p class="eyebrow">PROJECT</p>
-          <h2 class="section-title">代表项目：local-cloud-hub</h2>
-          <p class="section-intro">
-            一个本地部署网关与服务管理平台原型，聚焦“统一服务入口、路由管理、状态可观测与运维自动化”。这个项目代表了我当前对“工程化平台能力”的实践方向。
-          </p>
-          <div class="project-meta">
-            <span>关键词：网关 / 服务管理 / Cloudflare Tunnel / 平台化</span>
-            <span>状态：持续迭代中</span>
-          </div>
+        <div class="container">
+          <article class="neon-card project-wrap">
+            <p class="eyebrow">PROJECT</p>
+            <h2 class="section-title">代表项目：local-cloud-hub</h2>
+            <p class="section-intro">
+              一个本地部署网关与服务管理平台原型，聚焦统一服务入口、路由管理、状态可观测与运维自动化，代表我当前在平台工程方向的核心实践。
+            </p>
+            <div class="project-meta">
+              <span>网关</span>
+              <span>服务管理</span>
+              <span>Cloudflare Tunnel</span>
+              <span>平台化</span>
+              <span>持续迭代中</span>
+            </div>
+          </article>
         </div>
       </section>
 
@@ -161,20 +174,20 @@
           <p class="eyebrow">ROADMAP</p>
           <h2 class="section-title">当前阶段</h2>
           <div class="roadmap-grid">
-            <article class="roadmap-item reveal">
+            <article class="neon-card roadmap-item reveal">
               <span class="step-index">01</span>
               <h3>能力沉淀</h3>
-              <p>把零散经验整理成可复用的工程模板、脚本和流程。</p>
+              <p>把零散经验固化为模板、脚本和可复用流程。</p>
             </article>
-            <article class="roadmap-item reveal">
+            <article class="neon-card roadmap-item reveal">
               <span class="step-index">02</span>
               <h3>原型迭代</h3>
-              <p>围绕核心项目持续打磨，从功能可用走向系统稳定。</p>
+              <p>围绕核心项目持续打磨，从可运行走向高稳定。</p>
             </article>
-            <article class="roadmap-item reveal">
+            <article class="neon-card roadmap-item reveal">
               <span class="step-index">03</span>
               <h3>方向收敛</h3>
-              <p>在实践中验证价值，再逐步明确长期产品与业务路径。</p>
+              <p>在实践反馈中验证价值，逐步明确长期产品路径。</p>
             </article>
           </div>
         </div>
@@ -184,8 +197,8 @@
         <div class="container contact-wrap">
           <p class="eyebrow">CONTACT</p>
           <h2 class="section-title">联系我</h2>
-          <p class="section-intro">如果你也在关注工程化与 AI 编程实践，欢迎邮件交流。</p>
-          <article class="contact-card reveal">
+          <p class="section-intro">如果你也关注工程化与 AI 编程实践，欢迎邮件交流。</p>
+          <article class="neon-card contact-card reveal">
             <h3>邮箱</h3>
             <a href="mailto:me@luyuanlab.eu.org">me@luyuanlab.eu.org</a>
           </article>
@@ -196,7 +209,7 @@
     <footer class="site-footer">
       <div class="container footer-inner">
         <p>© <span id="year"></span> 路漫漫科技</p>
-        <p>持续构建，持续学习，持续进化。</p>
+        <p>Build Fast. Ship Strong. Keep Evolving.</p>
       </div>
     </footer>
 
