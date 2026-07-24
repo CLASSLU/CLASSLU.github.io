@@ -199,6 +199,10 @@
             <h3>邮箱</h3>
             <a id="contactEmail" href="mailto:me@luyuanlab.eu.org">me@luyuanlab.eu.org</a>
           </article>
+          <article class="neon-card contact-card reveal">
+            <h3>GitHub</h3>
+            <a id="contactGithub" href="https://github.com/CLASSLU" target="_blank" rel="noopener noreferrer">github.com/CLASSLU</a>
+          </article>
         </div>
       </section>
     </main>
@@ -210,6 +214,30 @@
       </div>
     </footer>
 
-    <script src="./script.js"></script>
+    <script>
+      (function loadSiteScript() {
+        const sources = [
+          "./script.js",
+          "https://cdn.jsdelivr.net/gh/CLASSLU/CLASSLU.github.io@main/script.js"
+        ];
+
+        function loadSource(index) {
+          const script = document.createElement("script");
+          script.src = sources[index];
+          script.defer = true;
+
+          script.addEventListener("error", () => {
+            script.remove();
+            if (index + 1 < sources.length) {
+              loadSource(index + 1);
+            }
+          });
+
+          document.body.appendChild(script);
+        }
+
+        loadSource(0);
+      })();
+    </script>
   </body>
 </html>

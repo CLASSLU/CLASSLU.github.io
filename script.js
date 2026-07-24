@@ -1,3 +1,5 @@
+document.documentElement.classList.add("js");
+
 const DEFAULT_CONTENT = {
   hero: {
     title: "路漫漫科技｜面向 AI 时代的工程化构建",
@@ -57,7 +59,8 @@ const DEFAULT_CONTENT = {
     }
   ],
   contact: {
-    email: "me@luyuanlab.eu.org"
+    email: "me@luyuanlab.eu.org",
+    github: "https://github.com/CLASSLU"
   },
   meta: {
     buildLabel: "Continuous Personal Ops v1"
@@ -297,6 +300,13 @@ function applyContent(content) {
   if (emailNode) {
     emailNode.textContent = email;
     emailNode.setAttribute("href", `mailto:${email}`);
+  }
+
+  const github = content.contact?.github || DEFAULT_CONTENT.contact.github;
+  const githubNode = document.querySelector("#contactGithub");
+  if (githubNode && github) {
+    githubNode.setAttribute("href", github);
+    githubNode.textContent = github.replace(/^https?:\/\//, "");
   }
 
   setText("buildLabel", content.meta?.buildLabel || DEFAULT_CONTENT.meta.buildLabel);

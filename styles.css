@@ -584,14 +584,17 @@ a {
 }
 
 .reveal {
-  opacity: 0;
-  transform: translateY(18px);
   transition:
     opacity 540ms ease var(--reveal-delay, 0ms),
     transform 540ms ease var(--reveal-delay, 0ms);
 }
 
-.reveal.is-visible {
+.js .reveal {
+  opacity: 0;
+  transform: translateY(18px);
+}
+
+.js .reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
 }
@@ -683,8 +686,8 @@ a {
     scroll-behavior: auto !important;
   }
 
-  .reveal,
-  .reveal.is-visible {
+  .js .reveal,
+  .js .reveal.is-visible {
     opacity: 1;
     transform: none;
   }

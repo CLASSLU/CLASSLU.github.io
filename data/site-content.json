@@ -1,7 +1,7 @@
 {
   "hero": {
     "title": "路漫漫科技｜面向 AI 时代的工程化构建",
-    "subtitle": "我正在构建一个可持续运营的个人技术品牌。方向在探索，但方法明确：工程化 + 自动化 + AI 协作，持续产出可验证结果。",
+    "subtitle": "我正在构建一个可持续运营的个人技术品牌。方向在探索，但方法明确：工程化 + 自动化 + AI 协作，持续产出可验证结果。当前重点是把一组本地原型项目打磨成可托管、可对外公开访问的产品形态。",
     "stats": [
       {
         "title": "10 年工程经验",
@@ -18,7 +18,7 @@
     ]
   },
   "about": {
-    "description": "我是一名有 10 年经验的软件开发者，长期深耕后端与系统工程。路漫漫科技是我面向下一阶段实践的个人公司品牌，强调持续学习、持续构建与持续进化。",
+    "description": "我是一名有 10 年经验的软件开发者，长期深耕后端与系统工程，做过平台化建设、网关与服务治理、自动化运维工具。路漫漫科技是我面向下一阶段实践的个人公司品牌，强调持续学习、持续构建与持续进化——把每一个想法都变成可运行、可验证、可持续迭代的产出。",
     "tags": [
       "Spring Boot / Java",
       "系统架构与平台化",
@@ -29,19 +29,19 @@
   "capabilities": [
     {
       "title": "后端系统架构",
-      "description": "围绕业务域建模、接口设计、权限体系与数据链路，构建稳定可演进的服务架构。"
+      "description": "围绕业务域建模、接口设计、权限体系与数据链路，构建稳定可演进的服务架构。从单体到平台化迭代，关注接口契约稳定性与可观测性。"
     },
     {
       "title": "平台工程与治理",
-      "description": "通过配置中心、路由管理、服务编排与可观测机制提升系统自治与可操作性。"
+      "description": "通过配置中心、路由管理、服务编排与可观测机制提升系统自治与可操作性。独立搭建过本地网关与 Cloudflare Tunnel 统一入口，把多服务收敛为一处可管理。"
     },
     {
       "title": "自动化与效率工具",
-      "description": "把重复流程脚本化、工具化，缩短从想法到可运行结果的交付路径。"
+      "description": "把重复流程脚本化、工具化，缩短从想法到可运行结果的交付路径。从代理一键部署、状态巡检到 CI 自动同步，让流程自己运转。"
     },
     {
       "title": "AI 时代开发协同",
-      "description": "将 AI 融入需求拆解、实现、验证与迭代，让研发流程更快、更稳、更系统。"
+      "description": "将 AI 融入需求拆解、实现、验证与迭代，让研发流程更快、更稳、更系统。深度使用 AI 编程工作流，并自研协议代理打通本地工具链。"
     }
   ],
   "focus": [
@@ -61,7 +61,7 @@
   "projects": [
     {
       "name": "local-cloud-hub",
-      "description": "本地部署网关与服务管理平台原型，聚焦统一服务入口、路由管理、状态可观测与运维自动化。",
+      "description": "本地部署网关与服务管理平台原型，聚焦统一服务入口、路由管理、状态可观测与运维自动化。当前作为路漫漫科技对外服务的运行底座，承担多项目路由汇聚。",
       "keywords": [
         "网关",
         "服务管理",
@@ -70,10 +70,71 @@
       ],
       "status": "持续迭代中",
       "link": ""
+    },
+    {
+      "name": "codex-proxy",
+      "description": "本地 Codex 编程助手能力中转站：将 Codex Desktop 能力以 OpenAI 标准协议对外暴露，无缝接入任意 AI 客户端。基于上游协议代理重构，补充 Docker 自动发布与桌面端打包。",
+      "keywords": [
+        "AI 协议代理",
+        "OpenAI 兼容",
+        "Docker / Electron",
+        "工具链"
+      ],
+      "status": "稳定运行",
+      "link": "https://github.com/icebear0828/codex-proxy"
+    },
+    {
+      "name": "newXiangQi｜象棋对战平台",
+      "description": "类天天象棋的在线联网对战平台。Spring Boot 3.2 + WebSocket(STOMP) + Redis 实时房间系统，覆盖用户认证、棋局对弈、观战与匹配，配套前端测试与 E2E 流程。",
+      "keywords": [
+        "Spring Boot 3.2",
+        "WebSocket / STOMP",
+        "房间系统",
+        "全栈"
+      ],
+      "status": "阶段迭代中",
+      "link": ""
+    },
+    {
+      "name": "ociproxy｜OCI 代理自动化",
+      "description": "Oracle Cloud 免费层级的自动部署工具包。支持 VLESS-Reality / VLESS-WebSocket 多模式、IP 轮换、Cloudflare DNS 自动同步、防火墙自动修复，一键产出抗封锁的高性能代理节点。",
+      "keywords": [
+        "Oracle Cloud",
+        "sing-box",
+        "自动运维",
+        "Cloudflare DNS"
+      ],
+      "status": "可用",
+      "link": ""
+    },
+    {
+      "name": "aichat｜AI 心动恋人",
+      "description": "基于 AI 虚拟角色的微信小程序恋爱聊天应用。微信小程序前端 + 自建后端，包含角色人设、亲密度系统、AI 提示编排与后台内容运营设计。",
+      "keywords": [
+        "微信小程序",
+        "AI 虚拟角色",
+        "亲密度系统",
+        "产品化"
+      ],
+      "status": "原型",
+      "link": ""
+    },
+    {
+      "name": "xiangqi｜浏览器象棋",
+      "description": "功能完整的浏览器端中国象棋实现，包含棋谱演示、步骤导航、走法智能解析与 AI 对弈。轻量单页，无需后端即可完整体验。",
+      "keywords": [
+        "浏览器端",
+        "棋谱解析",
+        "单页应用",
+        "纯前端"
+      ],
+      "status": "已发布",
+      "link": "https://github.com/CLASSLU/xiangqi"
     }
   ],
   "contact": {
-    "email": "me@luyuanlab.eu.org"
+    "email": "me@luyuanlab.eu.org",
+    "github": "https://github.com/CLASSLU"
   },
   "meta": {
     "buildLabel": "Continuous Personal Ops v1"

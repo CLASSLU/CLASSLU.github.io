@@ -1,14 +1,1 @@
-{
-  "items": [
-    {
-      "date": "2026-04-08",
-      "title": "主页改为持续运营架构",
-      "summary": "页面内容数据化，新增运营更新流与 OpenClaw 接入面板。"
-    },
-    {
-      "date": "2026-04-08",
-      "title": "视觉升级为深色霓虹科技风",
-      "summary": "重构页面视觉层次与交互风格，更符合 AI 工程品牌定位。"
-    }
-  ]
-}
+{"items": [{"date": "2026-04-12", "title": "cloudcli 兜底路由稳定化", "summary": "在 local-cloud-hub 修复 cloudcli 兜底路由中断问题，让 platform 服务流量回退到稳定链路。"}, {"date": "2026-04-08", "title": "主页升级为持续运营架构", "summary": "jiuwan 内容数据化，新增运营更新流与 OpenClaw 接入面板，网站由静态发布站转为持续运营形态。"}, {"date": "2026-04-08", "title": "视觉重构为深色霓虹科技风", "summary": "重构 jiuwan 视觉层次与交互风格，强化 AI 工程品牌定位。"}, {"date": "2026-04-08", "title": "cloudflared 先于平台服务启动", "summary": "local-cloud-hub 调整启动顺序，cloudflared 在平台托管服务之前就绪，避免内网入口在云端暴露前的短暂缺口。"}, {"date": "2026-04-08", "title": "本地枢纽自启动稳定", "summary": "修复 local-hub autorun 时序问题并同步 platform 文档与配置，让本地网关重启后无需人工介入。"}, {"date": "2026-04-02", "title": "平台服务 watchdog 与退避策略", "summary": "local-cloud-hub 新增可选平台服务 watchdog，按指数退避自动重启异常进程，避免短时抖动反复拉起。"}, {"date": "2026-04-02", "title": "admin token 重置与配置回滚", "summary": "platformctl 支持 admin token 重置与配置备份回滚，误改路由也能在分钟级恢复到上一可用态。"}, {"date": "2026-04-02", "title": "CloudCLI 子路径与鉴权转发稳定", "summary": "local-cloud-hub 修复 CloudCLI 子路径加载与认证转发逻辑，外网走 yuanlu.qzz.io 仍能命中本地服务。"}, {"date": "2026-03-28", "title": "发布 jiuwan 官方网站", "summary": "jiuwan 完成域名 CNAME 与首次发布，个人工程主页正式上线。"}, {"date": "2026-03-28", "title": "本地网关可移植性与 preflight", "summary": "local-cloud-hub 引入 env 加载、preflight 检查与 token 安全护栏，本地入口可在新机器上一键拉起并通过校验。"}, {"date": "2026-03-19", "title": "newXiangQi 阶段三房间系统完工", "summary": "象棋对战平台完成阶段三游戏房间系统，并补全 hydration 相关 E2E 与单元测试。"}, {"date": "2026-03-19", "title": "aichat 重塑为 AI 内容创作平台", "summary": "aichat 重新定义 admin 为 AI 优先内容创作平台，补充世界探索产品设计稿与后台图片 AI prompt 规范。"}, {"date": "2026-03-18", "title": "newXiangQi 阶段二认证系统与 CI 闭环", "summary": "象棋对战平台完成阶段二用户认证系统，配置项目级 ECC hooks 与 continuous-pr 模式，PR 进入自动循环验证。"}, {"date": "2026-03-14", "title": "codex-proxy 自动发布到 GHCR", "summary": "codex-proxy 实现 Docker 镜像自动发布到 GHCR 并支持 Watchtower 拉取，桌面端与容器端版本自动同步。"}, {"date": "2026-02-26", "title": "aichat 可维护性重构", "summary": "aichat 拆分 chat services 并修复 AI prompt 编码，统一 affection 控制配置，为后续产品演化清理基础结构。"}]}
