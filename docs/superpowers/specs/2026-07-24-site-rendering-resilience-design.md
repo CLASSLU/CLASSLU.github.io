@@ -11,7 +11,7 @@ The navigation is static HTML, but the content sections use the `.reveal` class.
 
 1. Treat readable HTML as the default state. `.reveal` will no longer hide content before JavaScript has executed.
 2. Add the `js` class to the root element as the first operation in `script.js`. Only `.js .reveal` receives the hidden animation start state.
-3. Replace the direct script tag with a two-source loader. It attempts the custom-domain script first, then falls back to jsDelivr's GitHub mirror on an error event. The mirror serves JavaScript with an executable MIME type.
+3. Replace the direct script tag with a two-source loader. It attempts the custom-domain script first, then falls back to an immutable jsDelivr copy of the same release on an error event. The mirror serves JavaScript with an executable MIME type.
 4. Keep existing data fallbacks and reduced-motion behavior unchanged.
 
 ## Acceptance Criteria

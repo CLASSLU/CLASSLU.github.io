@@ -4,7 +4,7 @@
 
 **Goal:** Keep the GitHub Pages site readable and recoverable when its primary JavaScript request fails.
 
-**Architecture:** HTML content is visible by default. JavaScript opts into the reveal animation only after it starts; an inline loader tries the custom-domain asset then jsDelivr's GitHub mirror.
+**Architecture:** HTML content is visible by default. JavaScript opts into the reveal animation only after it starts; an inline loader tries the custom-domain asset then an immutable jsDelivr release copy.
 
 **Tech Stack:** HTML5, CSS3, vanilla JavaScript, GitHub Pages.
 
@@ -33,7 +33,7 @@
 - Modify: `index.html`
 
 - [ ] Replace `<script src="./script.js"></script>` with an inline loader.
-- [ ] Request `./script.js` first and `https://cdn.jsdelivr.net/gh/CLASSLU/CLASSLU.github.io@main/script.js` after an error event.
+- [ ] Request `./script.js` first and `https://cdn.jsdelivr.net/gh/CLASSLU/CLASSLU.github.io@fea096b6946b27ccd16e8057baf783c30e6b74d9/script.js` after an error event.
 - [ ] Verify the local page renders with the primary script path.
 - [ ] Verify a browser session with the primary script request blocked still exposes visible content.
 
