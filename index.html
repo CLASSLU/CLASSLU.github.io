@@ -3,241 +3,125 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="路漫漫科技是可持续运营的个人技术展示网站，聚焦 AI 时代工程化实践与 OpenClaw 接入。"
-    />
-    <meta name="theme-color" content="#070d1d" />
-    <title>路漫漫科技 | 可持续运营的个人技术主页</title>
+    <meta name="description" content="路漫漫科技，个人工程师的工作档案。记录本地工具、AI 工作流与长期运行的产品。" />
+    <meta name="theme-color" content="#f4f2ec" />
+    <title>路漫漫科技 | 个人工程师工作档案</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Sans+SC:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="aurora aurora-a" aria-hidden="true"></div>
-    <div class="aurora aurora-b" aria-hidden="true"></div>
-    <div class="grid-overlay" aria-hidden="true"></div>
+    <canvas class="trace-canvas" aria-hidden="true"></canvas>
+    <div class="paper-grid" aria-hidden="true"></div>
 
     <header class="site-header" id="top">
-      <div class="container header-inner">
-        <a class="brand" href="#top">
-          <span class="brand-mark">LM</span>
-          <span class="brand-copy">
-            <strong>路漫漫科技</strong>
-            <small>PERSONAL ENGINEERING STUDIO</small>
-          </span>
-        </a>
-
-        <button
-          class="nav-toggle"
-          type="button"
-          aria-controls="siteNav"
-          aria-expanded="false"
-          aria-label="切换导航菜单"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-
-        <nav class="site-nav" id="siteNav">
-          <a href="#about">关于我</a>
-          <a href="#skills">工程能力</a>
-          <a href="#focus">探索方向</a>
-          <a href="#projects">项目实践</a>
-          <a href="#updates">运营更新</a>
-          <a href="#openclaw">OpenClaw</a>
+      <div class="shell header-inner">
+        <a class="wordmark" href="#top" aria-label="路漫漫科技首页">路漫漫<span>·</span></a>
+        <nav class="site-nav" id="siteNav" aria-label="主要导航">
+          <a href="#about">关于</a>
+          <a href="#work">工程现场</a>
+          <a href="#projects">项目</a>
+          <a href="#notes">记录</a>
           <a href="#contact">联系</a>
         </nav>
+        <div class="header-tools">
+          <label class="theme-switch" title="切换深色模式">
+            <span>夜间</span><input type="checkbox" id="themeToggle" /><i></i>
+          </label>
+          <button class="nav-toggle" type="button" aria-label="打开导航" aria-controls="siteNav" aria-expanded="false"><span></span><span></span></button>
+        </div>
       </div>
     </header>
 
     <main>
-      <section class="hero section">
-        <div class="container hero-grid">
-          <div class="hero-content reveal">
-            <p class="eyebrow">CONTINUOUS PERSONAL OPS</p>
-            <h1 class="display" id="heroTitle">路漫漫科技｜面向 AI 时代的工程化构建</h1>
-            <p class="hero-subtitle" id="heroSubtitle"></p>
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="#updates">查看最近更新</a>
-              <a class="btn btn-ghost" href="#openclaw">查看 OpenClaw 状态</a>
-            </div>
+      <section class="hero shell section-anchor" id="intro">
+        <div class="hero-copy reveal">
+          <p class="kicker">YUAN LU / PERSONAL ENGINEERING ARCHIVE</p>
+          <h1>把本地工具与<br />AI 工作流做成<br /><em>长期运行的产品。</em></h1>
+          <p class="lede">路漫漫科技是我的工程实践档案。这里记录从后端系统、部署入口到 AI 协作工具的构建、上线与持续维护。</p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#projects">查看项目 <b>→</b></a>
+            <a class="button button-line" href="#about">了解我 <b>→</b></a>
           </div>
+          <div class="hero-coordinates"><span>22.5412 N</span><span>114.0579 E</span><span>EST. 2016</span></div>
+        </div>
+        <figure class="hero-portrait reveal">
+          <img src="./picture/插图.png" alt="路漫漫科技创始人的工程师插画肖像" />
+          <figcaption><span>01</span> ENGINEER / BUILDER</figcaption>
+        </figure>
+        <div class="hero-route" aria-hidden="true"><i></i><i></i><i></i><b>ROUTE / 001</b></div>
+      </section>
 
-          <div class="hero-panel reveal">
-            <article class="neon-card stat-card">
-              <p class="stat-value" id="heroStat1Title"></p>
-              <p class="stat-label" id="heroStat1Desc"></p>
-            </article>
-            <article class="neon-card stat-card">
-              <p class="stat-value" id="heroStat2Title"></p>
-              <p class="stat-label" id="heroStat2Desc"></p>
-            </article>
-            <article class="neon-card stat-card">
-              <p class="stat-value" id="heroStat3Title"></p>
-              <p class="stat-label" id="heroStat3Desc"></p>
-            </article>
+      <section class="about section-anchor" id="about">
+        <div class="shell about-grid">
+          <div class="section-index reveal"><span>01</span><p>PROFILE</p></div>
+          <div class="about-copy reveal">
+            <p class="kicker">关于我</p>
+            <h2>不让问题停在<br />“凑合可用”。</h2>
+            <p>我是一名有 10 年经验的软件开发者，长期做后端与系统工程。碰到重复流程，我会把它脚本化；服务入口复杂，就做成可管理的平台；AI 进入工作流，就把它接到真实交付里。</p>
+            <p>我相信好工程不是一次性演示，而是能被维护、被验证，并在下一次迭代里继续生长。</p>
+            <ul class="profile-tags"><li>Java / Spring</li><li>平台工程</li><li>自动化运维</li><li>AI 协作开发</li></ul>
           </div>
+          <figure class="work-photo reveal">
+            <img src="./picture/工作场景.png" alt="安静的工程办公场景与工作台" />
+            <figcaption>WORKING SCENE / SHENZHEN</figcaption>
+          </figure>
         </div>
       </section>
 
-      <section class="section reveal" id="about">
-        <div class="container">
-          <p class="eyebrow">ABOUT</p>
-          <h2 class="section-title">关于我</h2>
-          <p class="section-intro" id="aboutDescription"></p>
-          <div class="chip-list" id="aboutTags"></div>
+      <section class="systems section-anchor" id="work">
+        <div class="shell">
+          <div class="section-heading reveal"><div><p class="kicker">工程现场</p><h2>从想法到长期运行，<br />我关心整条链路。</h2></div><p>不是罗列技术名词，而是把每一层真正接起来。</p></div>
+          <ol class="system-route">
+            <li class="reveal"><span>01</span><div><h3>构建</h3><p>从业务域、接口契约和可演进的服务边界开始。</p></div></li>
+            <li class="reveal"><span>02</span><div><h3>连接</h3><p>用路由、网关和统一入口把分散服务组织起来。</p></div></li>
+            <li class="reveal"><span>03</span><div><h3>运行</h3><p>把部署、状态、回退和日常操作放进可观测的闭环。</p></div></li>
+            <li class="reveal"><span>04</span><div><h3>迭代</h3><p>让 AI 协作加入需求、实现、验证与持续改进。</p></div></li>
+          </ol>
         </div>
       </section>
 
-      <section class="section reveal" id="skills">
-        <div class="container">
-          <p class="eyebrow">CAPABILITIES</p>
-          <h2 class="section-title">工程能力矩阵</h2>
-          <p class="section-intro">能力内容来自 `data/site-content.json`，可持续增删。</p>
-          <div class="matrix-grid" id="capabilityList"></div>
-        </div>
-      </section>
-
-      <section class="section reveal" id="focus">
-        <div class="container">
-          <p class="eyebrow">NOW</p>
-          <h2 class="section-title">当前探索方向</h2>
-          <div class="focus-list" id="focusList"></div>
-        </div>
-      </section>
-
-      <section class="section reveal" id="projects">
-        <div class="container">
-          <p class="eyebrow">PROJECTS</p>
-          <h2 class="section-title">项目实践</h2>
-          <div class="project-list" id="projectList"></div>
-        </div>
-      </section>
-
-      <section class="section reveal" id="updates">
-        <div class="container">
-          <p class="eyebrow">OPERATIONS</p>
-          <h2 class="section-title">持续运营更新流</h2>
-          <p class="section-intro">更新内容来自 `data/updates.json`。每次有进展，只需追加一条记录并推送。</p>
-          <div class="ops-grid">
-            <article class="neon-card ops-panel">
-              <h3>最近更新</h3>
-              <ul class="timeline-list" id="updateList"></ul>
+      <section class="projects section-anchor" id="projects">
+        <div class="shell">
+          <div class="section-heading reveal"><div><p class="kicker">精选项目</p><h2>正在长期投入的<br />三件工程作品。</h2></div><p>每个项目都来自实际问题，而不是为了填满作品集。</p></div>
+          <div class="project-grid">
+            <article class="project-card project-featured reveal">
+              <div class="project-number">PROJECT / 01</div>
+              <div><p class="project-type">PLATFORM ENGINEERING</p><h3>local-cloud-hub</h3><p>本地部署网关与服务管理平台，把多项目路由、公网入口、状态与运维动作收拢到一个可操作的工作台。</p></div>
+              <div class="project-foot"><span>Gateway</span><span>Cloudflare Tunnel</span><span>持续迭代</span></div>
             </article>
-            <article class="neon-card ops-panel">
-              <h3>运营动作建议</h3>
-              <ul class="ops-checklist">
-                <li>每周至少更新 1 条项目进展</li>
-                <li>每月沉淀 1 条工程方法总结</li>
-                <li>关键里程碑同步到项目实践区</li>
-                <li>OpenClaw 状态通过只读接口自动更新</li>
-              </ul>
+            <article class="project-card project-book reveal">
+              <img src="./picture/技术细节.png" alt="工程实践常用的 Spring Cloud 技术书籍" />
+              <div class="project-overlay"><p class="project-type">AI INFRASTRUCTURE</p><h3>codex-proxy</h3><p>把桌面端 AI 编程能力接入标准协议与本地工具链。</p><a href="https://github.com/icebear0828/codex-proxy" target="_blank" rel="noreferrer">查看仓库 <b>→</b></a></div>
+            </article>
+            <article class="project-card project-plain reveal">
+              <div class="project-number">PROJECT / 03</div>
+              <p class="project-type">REALTIME APPLICATION</p><h3>newXiangQi</h3><p>围绕实时房间、对弈和观战构建的在线象棋平台，覆盖后端服务、WebSocket 通信与完整测试流程。</p>
+              <div class="project-foot"><span>Spring Boot</span><span>WebSocket</span><span>Redis</span></div>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section reveal" id="openclaw">
-        <div class="container">
-          <p class="eyebrow">OPENCLAW</p>
-          <h2 class="section-title">OpenClaw 接入状态</h2>
-          <p class="section-intro">
-            网站不会存储你的网关密钥。推荐通过只读公开状态端点接入（例如由 local-cloud-hub 提供）。
-          </p>
-
-          <article class="neon-card status-panel">
-            <div class="status-header">
-              <h3 id="ocName">OpenClaw Gateway</h3>
-              <span class="status-badge" id="ocBadge">未配置</span>
-            </div>
-
-            <div class="status-grid">
-              <div>
-                <p class="status-key">接入模式</p>
-                <p class="status-value" id="ocMode">manual</p>
-              </div>
-              <div>
-                <p class="status-key">健康摘要</p>
-                <p class="status-value" id="ocSummary">未配置</p>
-              </div>
-              <div>
-                <p class="status-key">模型</p>
-                <p class="status-value" id="ocModel">未提供</p>
-              </div>
-              <div>
-                <p class="status-key">通道在线</p>
-                <p class="status-value" id="ocChannels">0 / 0</p>
-              </div>
-              <div>
-                <p class="status-key">活跃会话</p>
-                <p class="status-value" id="ocSessions">0</p>
-              </div>
-              <div>
-                <p class="status-key">最近同步</p>
-                <p class="status-value" id="ocUpdatedAt">未同步</p>
-              </div>
-            </div>
-
-            <p class="status-note" id="ocNote"></p>
-            <a class="panel-link" href="./docs/openclaw-integration.md">查看 OpenClaw 接入说明</a>
-          </article>
+      <section class="notes section-anchor" id="notes">
+        <div class="shell notes-grid">
+          <div class="notes-intro reveal"><p class="kicker">BUILD LOG</p><h2>持续构建，<br />留下可回看的记录。</h2><p>不是为了制造“忙碌感”，而是让每一次推进都能沉淀为下一步的基础。</p></div>
+          <ol class="notes-list reveal">
+            <li><time>2026.04.12</time><div><h3>cloudcli 兜底路由稳定化</h3><p>修复回退链路中断，让平台服务流量回到稳定路径。</p></div></li>
+            <li><time>2026.04.08</time><div><h3>本地枢纽自启动稳定</h3><p>调整启动时序，入口和平台服务在重启后自动恢复。</p></div></li>
+            <li><time>2026.03.28</time><div><h3>发布路漫漫科技</h3><p>将个人工程实践作为可持续维护的公开档案。</p></div></li>
+          </ol>
         </div>
       </section>
 
-      <section class="section reveal" id="contact">
-        <div class="container contact-wrap">
-          <p class="eyebrow">CONTACT</p>
-          <h2 class="section-title">联系我</h2>
-          <p class="section-intro">如果你也关注工程化与 AI 编程实践，欢迎邮件交流。</p>
-          <article class="neon-card contact-card reveal">
-            <h3>邮箱</h3>
-            <a id="contactEmail" href="mailto:me@luyuanlab.eu.org">me@luyuanlab.eu.org</a>
-          </article>
-          <article class="neon-card contact-card reveal">
-            <h3>GitHub</h3>
-            <a id="contactGithub" href="https://github.com/CLASSLU" target="_blank" rel="noopener noreferrer">github.com/CLASSLU</a>
-          </article>
-        </div>
+      <section class="contact section-anchor" id="contact">
+        <div class="shell contact-inner reveal"><p class="kicker">CONTACT / NEXT ROUTE</p><h2>有值得长期做的事，<br />欢迎一起聊。</h2><div class="contact-links"><a href="mailto:me@luyuanlab.eu.org">me@luyuanlab.eu.org <b>↗</b></a><a href="https://github.com/CLASSLU" target="_blank" rel="noreferrer">github.com/CLASSLU <b>↗</b></a></div></div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <p>© <span id="year"></span> 路漫漫科技</p>
-        <p id="buildLabel">Build Fast. Ship Strong. Keep Evolving.</p>
-      </div>
-    </footer>
-
-    <script>
-      (function loadSiteScript() {
-        const sources = [
-          "./script.js",
-          "https://cdn.jsdelivr.net/gh/CLASSLU/CLASSLU.github.io@fea096b6946b27ccd16e8057baf783c30e6b74d9/script.js"
-        ];
-
-        function loadSource(index) {
-          const script = document.createElement("script");
-          script.src = sources[index];
-          script.defer = true;
-
-          script.addEventListener("error", () => {
-            script.remove();
-            if (index + 1 < sources.length) {
-              loadSource(index + 1);
-            }
-          });
-
-          document.body.appendChild(script);
-        }
-
-        loadSource(0);
-      })();
-    </script>
+    <aside class="section-rail" aria-label="页面进度"><a href="#about" aria-label="关于"></a><a href="#work" aria-label="工程现场"></a><a href="#projects" aria-label="项目"></a><a href="#notes" aria-label="记录"></a><a href="#contact" aria-label="联系"></a></aside>
+    <footer><div class="shell"><span>© <span id="year"></span> 路漫漫科技</span><span>DESIGNED AS A LIVING ENGINEERING ARCHIVE</span></div></footer>
+    <script src="./script.js"></script>
   </body>
 </html>
