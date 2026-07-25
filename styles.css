@@ -14,3 +14,8 @@ body.dark .hero-portrait img{mix-blend-mode:screen;filter:contrast(.94) brightne
 .hero-portrait{background:#b7ab95;box-shadow:20px 20px 0 rgba(23,24,23,.08)}
 .hero-portrait::after{background:rgba(104,87,62,.30)}
 .hero-portrait img{filter:sepia(.17) saturate(.72) contrast(1.04) brightness(.92)}
+.hero-portrait{background:#e5e0d5;box-shadow:14px 14px 0 rgba(23,24,23,.045)}
+.hero-portrait::after{background:rgba(253,250,241,.34);mix-blend-mode:screen}
+.hero-portrait img{filter:sepia(.08) saturate(.74) contrast(.92) brightness(1.08)}
+.hero-portrait::after{background:rgba(253,250,241,.22)}
+.hero-portrait img{filter:sepia(.08) saturate(.78) contrast(.98) brightness(1.04)}
