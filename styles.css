@@ -11,3 +11,6 @@ body.dark .hero-portrait{background:#292a27;border-color:#56564f;box-shadow:18px
 body.dark .hero-portrait::before{opacity:.36;mix-blend-mode:screen}
 body.dark .hero-portrait::after{background:rgba(0,0,0,.24)}
 body.dark .hero-portrait img{mix-blend-mode:screen;filter:contrast(.94) brightness(.78) sepia(.08)}
+.hero-portrait{background:#b7ab95;box-shadow:20px 20px 0 rgba(23,24,23,.08)}
+.hero-portrait::after{background:rgba(104,87,62,.30)}
+.hero-portrait img{filter:sepia(.17) saturate(.72) contrast(1.04) brightness(.92)}
